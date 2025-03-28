@@ -1,0 +1,70 @@
+1
+Adding Items
+You can add item into the space by providing the program with specific position.
+c(position)r(position) When 'c' is for column and 'r' is for row
+EX.
+|		|		|		|
+|		|		|		|
+|		|		|		|
+|		|		|		|
+command: c1r1 Hello!
+---
+Result:
+|Hello!	|		|		|
+|		|		|		|
+|		|		|		|
+|		|		|		|
+command:
+
+2
+Removing Items
+Simply providing the program with specific position, and leave the input blank will remove the items
+EX.
+|Hello!	|		|		|
+|		|		|		|
+|		|		|		|
+|		|		|		|
+command: c1r1 
+---
+Result:
+|		|		|		|
+|		|		|		|
+|		|		|		|
+|		|		|		|
+command:
+
+3
+Clearing Data
+By typing 'clear' into the command it will erase every items and renew the data.
+EX.
+|Hello!	|World	|		|
+|I'm	|CSV!	|		|
+|		|		|		|
+|		|		|		|
+command: clear
+---
+Result:
+|		|		|		|
+|		|		|		|
+|		|		|		|
+|		|		|		|
+command:
+
+4
+Exiting Program (save data)
+Typing 'save' to exit the program and save data.
+You can name it however you like, and the file will be saved in .csv.
+EX.
+|Hello!	|World	|		|
+|I'm	|CSV!	|		|
+|		|		|		|
+|		|		|		|
+command: save
+---
+Enter file name to save as CSV: test
+---
+File saved as test.csv
+
+5
+Killing Process
+By typing in 'kill' the program will end immediately and will not save any data before returning to menu.
