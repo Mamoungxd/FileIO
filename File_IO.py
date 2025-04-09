@@ -9,6 +9,8 @@ Dependencies:
 - help_info.txt (for CSV help command)
 
 Author: SlightlyOffset
+
+Version: 1.01
 """
 
 import os
@@ -45,7 +47,7 @@ def main():
                 print("\nStopping...")
                 break
             
-            if file_path.split(".")[1] == "txt":
+            if file_path.endswith(".txt"):
                 try:
                     with open(file_path, 'r', encoding="utf8") as file:
                         content = file.read()       # File cursor at EOF
